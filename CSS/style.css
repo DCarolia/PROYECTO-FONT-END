@@ -21,6 +21,35 @@
             font-size: 2em;
         }
     }
+
+    #nav-bar{
+        background-color: var(--bgcolor);
+        color: var(--textcolor);
+        padding-right: 4%;
+    }
+    
+    .d-inline-block{
+        margin-left: 4%;
+    }
+    
+    #item1{
+        color: var(--textcolor);
+    }
+    
+    #item{
+        color: rgb(185, 182, 182);
+    }
+    
+    
+    #ticket{
+        color: var(--colorbtn);
+    }
+    
+    .navbar-toggler{
+        border-color: var(--textcolor);
+        margin-right: 4%;
+    }
+
     #card-oradores{
         display: flex;
         flex-flow: row wrap;
