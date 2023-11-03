@@ -124,6 +124,11 @@ main{
             margin-top: 1%
 
         }
+        
+        #btn-invitacion{
+            flex-wrap: nowrap;
+            margin-left: -5%;
+        }
 
         a {
             text-decoration: none;
