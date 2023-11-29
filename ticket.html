@@ -46,7 +46,7 @@
     </header>
 
 
-    <div class=" container-fluid item-4">
+    <div class="container-fluid item-4">
 
         <div class="categorias">
             <div class="card text-bg-primary mb-3" style="max-width: 35rem;">
@@ -79,24 +79,29 @@
             <h4>VENTA</h4>
             <h2><strong>VALOR DE TICKET $200</strong></h2>
         </div>
-        <div class="form-group">
+        <div class="form-group" id="tick">
             <form>
                 <div id="nombres" class="row">
-                    <div class="col-lg-6 sm-12">
-                        <input class="form-control nbre" type="text" placeholder="Nombre">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-required="true">
                     </div>
-                    <div class="col-lg-6 sm-12">
-                        <input class="form-control" type="text" placeholder="Apellido">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-required="true">
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col">
+                        <input class="form-control" type="text" placeholder="Email" aria-required="true">
                     </div>
                 </div>
-                <input class="form-control" type="text" placeholder="Email">
-                <div id="nombres" class="row">
-                    <div class="col-lg-6  sm-12 cant">
+                <div id="cant-cat" class="row">
+                    <div class="col">
                         <label>Cantidad
-                            <input id="cantidad" class="form-control" type="text" placeholder="Cantidad">
+                            <input id="cantidad" class="form-control" type="number" placeholder="Cantidad" min="1"
+                                required>
                         </label>
                     </div>
-                    <div class="col-lg-6  sm-12 sel">
+                    <div class="col">
                         <label>Categoria
                             <select id="categoria" class="form-select dropdown nbre" aria-label="Categoria">
                                 <option value selected>--Seleccione--</option>
@@ -108,12 +113,20 @@
                         </label>
                     </div>
                 </div>
-                <div class="alert alert-primary" role="alert">
-                    Total a pagar: $ <span id="total" class="align-middle"></span>
+                <div id="pagar" class="row">
+                    <div class="col">
+                        <div class="alert alert-primary" role="alert">
+                            Total a pagar: $ <span id="total" class="align-middle"></span>
+                        </div>
+                    </div>
                 </div>
-                <div id="nombres">
-                    <button id="borrar" class="btn btn-primary nbre" type="reset">Borrar</button>
-                    <button id="resumen" class="btn btn-primary" type="button">Resumen</button>
+                <div id="nombres" class="row">
+                    <div class="col">
+                        <button id="borrar" class="btn btn-primary nbre" type="reset">Borrar</button>
+                    </div>
+                    <div class="col">
+                        <button id="resumen" class="btn btn-primary" type="button">Resumen</button>
+                    </div>
                 </div>
             </form>
         </div>

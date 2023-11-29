@@ -33,6 +33,13 @@ b{
     font-size: 1.4rem;
 }
 
+#cant-cat{
+    margin-top: 2%;
+}
+
+#pagar{
+    margin-top: 2%;
+}
 
 label{
     width: 100%;
@@ -64,7 +71,55 @@ option{
     font-size: .8em;
 }
 
+@media (max-width: 1024px) {
 
+    .item-4{
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .item-4{
+        margin-top: 13%;
+        margin-bottom: 13.2%;
+    }
+
+    #tick{
+        max-width: 580px;
+    }
+
+    .cant{
+        padding-right: 0em;
+    }
+    
+    .sel{
+        padding-left: 0em;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .item-4{
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    #tick{
+        max-width: 580px;
+    }
+
+    .cant{
+        padding-right: 0em;
+    }
+    
+    .sel{
+        padding-left: 0em;
+    }
+
+}
 
 @media (max-width: 575px) {
     .card{
